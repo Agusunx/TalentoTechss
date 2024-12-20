@@ -1,0 +1,308 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+nav {
+    background-color: #81c784;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background-color: #66bb6a;
+    border-radius: 5px;
+}
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #a5d6a7, #b2dfdb);
+    color: white;
+    padding: 60px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.3rem;
+}
+
+#productos, #otros-productos {
+    padding: 20px;
+    text-align: center;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.producto-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.precio {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.comprar-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comprar-btn:hover {
+    background-color: #45a049;
+}
+
+#carrito-container {
+    padding: 20px;
+}
+
+.producto-carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.producto-carrito-item img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carrito-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.carrito-info h4 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+}
+
+.carrito-info p {
+    margin: 5px 0;
+}
+
+.carrito-info button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.carrito-info button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.eliminar-btn {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.eliminar-btn:hover {
+    background-color: #ff8a65;
+    transform: scale(1.1);
+}
+
+.alerta-compra {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 3px solid #81c784;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s;
+}
+
+.alerta-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.alerta-compra p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.alerta-opciones {
+    margin-top: 15px;
+}
+
+.alerta-opciones button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.alerta-opciones .ir-carrito {
+    background-color: #4caf50;
+    color: white;
+}
+
+.alerta-opciones .seguir-comprando {
+    background-color: #ff7043;
+    color: white;
+}
+
+.alerta-opciones .ir-carrito:hover {
+    background-color: #66bb6a;
+}
+
+.alerta-opciones .seguir-comprando:hover {
+    background-color: #ff8a65;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+footer {
+    background-color: #81c784;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top-left-radius: 50% 20px;
+    border-top-right-radius: 50% 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos de los botones de incremento y decremento */
+.producto-info button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto blanco */
+    padding: 5px 10px; /* Relleno */
+    margin: 0 5px; /* Margen */
+    font-size: 1rem; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo puntero */
+    transition: background-color 0.3s, transform 0.3s; /* Transición para el cambio de color y la transformación */
+}
+
+/* Estilo cuando el botón está en foco */
+.producto-info button:focus {
+    outline: none; /* Sin borde de foco */
+    box-shadow: 0 0 5px #66bb6a; /* Sombra */
+}
+
+/* Estilo cuando el botón está en hover */
+.producto-info button:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+    transform: scale(1.1); /* Agranda el botón */
+}

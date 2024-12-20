@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
+    <title>Centro de Terapias Holísticas</title>
+</head>
+<body id="index">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">Centro de Terapias Holísticas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Carrito de Compras" class="cart-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="text-center py-5">
+        <h1>Centro de Terapias Holísticas</h1>
+        <p>Bienvenidos a un espacio de bienestar y sanación.</p>
+    </header>
+
+    <main>
+        <section id="productos" class="py-5">
+            <div class="container">
+                <h3 class="text-center">Productos Destacados</h3>
+                <div class="productos-container" id="productos-destacados">
+                    <!-- Los productos destacados se generarán dinámicamente aquí -->
+                </div>
+
+                <h3 class="text-center mt-5">Otros Productos</h3>
+                <div class="productos-container" id="otros-productos">
+                    <!-- Los otros productos se generarán dinámicamente aquí -->
+                </div>
+            </div>
+        </section>
+
+        <section id="reseñas" class="container my-5">
+            <h3>Lo que dicen nuestros clientes</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://this-person-does-not-exist.com/img/avatar-gen2893bd1dfda761d483ad128c8a90e75a.jpg" class="card-img-top" alt="Cliente 1">
+                        <div class="card-body">
+                            <h5 class="card-title">María López</h5>
+                            <p class="card-text">"Los productos son maravillosos. He notado un cambio significativo en mi energía y bienestar desde que los empecé a usar. ¡Totalmente recomendados!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://this-person-does-not-exist.com/img/avatar-genc1006de59c0305e7be7471acd2daedc8.jpg" class="card-img-top" alt="Cliente 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Carlos Gómez</h5>
+                            <p class="card-text">"Excelente atención al cliente. Me asesoraron muy bien sobre los productos que necesitaba y los resultados han sido fantásticos."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://this-person-does-not-exist.com/img/avatar-gen3f2b69402f297102702ca90c0406c5f6.jpg" class="card-img-top" alt="Cliente 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Laura Martínez</h5>
+                            <p class="card-text">"Una experiencia única. Los productos me han ayudado mucho a encontrar equilibrio en mi vida diaria. ¡Recomiendo sin duda!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-5">
+            <div class="container">
+                <h3 class="text-center">Contáctanos</h3>
+                <form id="contacto-form" action="https://formspree.io/f/mkgnboqw" method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Tu email:</label>
+                        <input type="email" name="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Tu mensaje:</label>
+                        <textarea name="message" class="form-control" id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    
+<footer> <div class="container"> <p>&copy; Agustín Navarro 2024 - Centro de Terapias Holísticas. Todos los derechos reservados.</p> <p> <strong>Contacto:</strong><br> Teléfono: +54 11 1234-5678<br> Email: info@terapias-holisticas.com </p> <p> <strong>Horario de Atención:</strong><br> Lunes a Viernes: 9:00 AM - 6:00 PM<br> Sábados: 10:00 AM - 2:00 PM </p> <p> <strong>Redes Sociales:</strong><br> <a href="https://www.facebook.com" target="_blank">Facebook</a> | <a href="https://www.instagram.com" target="_blank">Instagram</a> | <a href="https://www.twitter.com" target="_blank">Twitter</a> </p> </div> </footer> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> </body> </html>
